@@ -62,7 +62,19 @@ const HomePage = () => {
                 Register
                 </button>
           </div>
-        {/* )} */}
+      </div>
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            For Admin Login
+          </h2>
+          <button
+            onClick={() => navigate("/admin/")}
+            className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 rounded-lg shadow-md text-base font-semibold"
+            >
+            Admin Login
+            </button>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 py-16">

@@ -1,7 +1,7 @@
 Project Title:
 Hostel Attendance System
 
-GitHub Link : [https://github.com/Manideepchopperla/InHouse_Intern](https://github.com/Manideepchopperla/Hostel-Attendence-System)
+GitHub Link : [https://github.com/Manideepchopperla/Hostel-Attendence-System](https://github.com/Manideepchopperla/Hostel-Attendence-System)
 
 Objective:
 To design and implement a full-stack hostel attendance monitoring system using the MERN stack, enabling secure student check-ins/check-outs, real-time attendance tracking, automated alerts for hostel administration(caretakers) Regarding Absentees.

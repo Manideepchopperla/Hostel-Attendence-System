@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js"
-    
   },
   "keywords": [
     "Backend",
@@ -18,7 +17,6 @@
   "author": "Manideep Chopperla",
   "license": "ISC",
   "dependencies": {
-
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -30,6 +28,7 @@
     "nodemailer": "^7.0.3",
     "path": "^0.12.7",
     "qrcode": "^1.5.4",
+    "serverless-http": "^3.2.0",
     "url": "^0.11.4"
   }
 }

@@ -79,6 +79,32 @@ Design and implement a full-stack hostel attendance monitoring system using the 
 
 ---
 
+## Screenshots
+ ### Home Page : 
+<img src="https://github.com/user-attachments/assets/21c9e845-d6b4-4d54-85a8-4cd6d8822ed3" width="90%" >
+
+### Student Login and signUp Page : 
+<img src="https://github.com/user-attachments/assets/bddcdb68-ff4a-4af4-a054-60a94b7d3289" width="45%" >
+<img src="https://github.com/user-attachments/assets/341c3c67-6677-4002-80ba-f9b637ff564a" width="45%" >
+
+### Admin Login and signUp Page : 
+<img src="https://github.com/user-attachments/assets/0eea7a52-5f75-4c2b-a78b-f4de8288ad63" width="45%" >
+<img src="https://github.com/user-attachments/assets/d54ce547-00e2-4161-86bc-76d71fb2a69b" width="45%" >
+
+### Student Dashboard : 
+<img src="https://github.com/user-attachments/assets/a8d680b2-d835-4882-a10e-91bb9f27ab54" width="45%" >
+<img src="https://github.com/user-attachments/assets/c3c1e994-bad7-4cb0-a624-09bbb91771f1" width="45%" >
+<img src="https://github.com/user-attachments/assets/2dabbf21-47c1-4cf3-9079-f7faabdce189" width="45%" >
+
+### Admin Dashboard : 
+<img src="https://github.com/user-attachments/assets/2ad47bcc-07ed-4b39-b88a-9a48549846c1" width="45%" >
+<img src="https://github.com/user-attachments/assets/2bda1253-f890-435f-8799-60f1b8af2957" width="45%" >
+<img src="https://github.com/user-attachments/assets/e9d3092d-ea90-4478-b9d6-55692d07eced" width="45%" >
+
+
+
+
+
 ## 🚀 Project Setup
 
 ### 1. Clone Repository

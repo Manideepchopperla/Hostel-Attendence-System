@@ -1,96 +1,179 @@
-Project Title:
-Hostel Attendance System
+# 🏨 Hostel Attendance System
 
-GitHub Link : [https://github.com/Manideepchopperla/Hostel-Attendence-System](https://github.com/Manideepchopperla/Hostel-Attendence-System)
+**GitHub Repository**: [Hostel Attendance System](https://github.com/Manideepchopperla/Hostel-Attendence-System)
 
-Objective:
-To design and implement a full-stack hostel attendance monitoring system using the MERN stack, enabling secure student check-ins/check-outs, real-time attendance tracking, automated alerts for hostel administration(caretakers) Regarding Absentees.
+## 🎯 Objective
+Design and implement a full-stack hostel attendance monitoring system using the **MERN stack**, enabling:
+- Secure student check-ins/check-outs
+- Real-time attendance tracking
+- Automated email alerts to caretakers for absentees
 
-Technology Stack:
-Frontend: React.js, Tailwind CSS, React Toastify, React-chart.js-2
+---
 
-Backend: Node.js, Express.js, cors, JWT, Bcrypt.js
+## ⚙️ Technology Stack
 
-Database: MongoDB
+- **Frontend**: React.js, Tailwind CSS, React Toastify, React-chart.js-2  
+- **Backend**: Node.js, Express.js, cors, JWT, Bcrypt.js  
+- **Database**: MongoDB  
+- **Utilities**:  
+  - `nodemailer` – Email notifications  
+  - `node-cron` – Scheduled email tasks  
+  - `qrcode` – QR code generation  
+  - `json2csv` – Exporting data to CSV  
 
-Utilities: Nodemailer (email alerts), Node Cron(Scheduling task for automated email sending), QR code (for generating QR Code), json2csv(for exporting the attendance list in to CSV).
+---
 
-PATHS/Routes :
-    1. Student : 
-        HomePage - / 
-        LoginPage - /login
-        RegistrationPage - /register
-        DashBoard - /dashboard
-        Attendance History - /history
-        Attendance QR Scanner - /qr-scan
-    2. Admin : 
-        LoginPage - /admin/
-        RegistrationPage - /admin/register
-        Dashboard - /admin/dashboard
+## 🌐 Routes
 
-Core Modules & Features:
-1. Student Module
-Registration & Login:
-Secure signup/login functionality with hashed passwords using JWT and bcrypt. Only verified users can access the dashboard.
+### 👨‍🎓 Student
+- `/` – Home Page  
+- `/login` – Login  
+- `/register` – Registration  
+- `/dashboard` – Dashboard  
+- `/history` – Attendance History  
+- `/qr-scan` – QR Scanner  
 
-Attendance Logging:
-Students scan a daily dynamic QR code (unique for every day) displayed at the hostel entrance to mark check-in and checkout timestamps.
+### 👨‍💼 Admin (Caretaker)
+- `/admin/` – Admin Login  
+- `/admin/register` – Admin Registration  
+- `/admin/dashboard` – Admin Dashboard  
 
-History Dashboard:
-Students can view personal attendance logs with timestamps like at what time they check-in and check-out.
+---
 
-2. Admin/Caretaker Module
-Admin Dashboard:
-Accessible only by caretakers.
+## 🔑 Core Modules & Features
 
-Auto Generate a Live QR Code For Attendance EveryDay. 
+### 1. Student Module
+- **Authentication**: Secure registration/login with JWT and bcrypt  
+- **QR Attendance**: Scan daily-generated QR code for check-in/out  
+- **Attendance Logs**: View personal attendance with timestamps  
 
-Real-time student check-in/check-out status.
+### 2. Admin/Caretaker Module
+- **Live QR Code**: Auto-generated daily QR codes (expires at 11:59 PM)  
+- **Real-Time Monitoring**: Track check-in/out status  
+- **Analytics Dashboard**: Charts showing attendance trends  
+- **Filtering Options**: Search by name, room number, date range  
+- **Email Alerts**:  
+  - Automated at 8:00 PM  
+  - Sends absentee list to caretaker via Nodemailer + Node Cron  
+- **Data Export**: Download attendance data in CSV  
 
-Graphical summaries (daily trends regarding no of Check in's).
+### 3. QR Attendance System
+- Unique QR per day, expiring daily at 11:59 PM  
+- Scanning triggers authenticated API call  
 
-Filters & Search:
-Powerful filters to locate records by:
+### 4. Analytics & Visualization
+- Visualize daily attendance trends with React Chart.js 2  
 
-Student name 
+### 5. Mobile-Responsive UI
+- Built with Tailwind CSS  
+- Responsive for both students and admins  
+- Real-time feedback via toast notifications  
 
-Date range
+---
 
-Room number
+## 🔐 Security Measures
 
-Alerts & Notifications:
+- JWT-based authentication with token expiration  
+- Role-based access control (Student/Admin)  
+- Protected APIs via middleware validation  
 
-Automated email alerts via Nodemailer and Node-Cron are sent when students misses his check-in on the Day, the list of students names are send to the Caretaker Via Email at 8:00 PM to inform the Absentees Names to the Caretaker.
+---
+
+## Screenshots
+ ### Home Page : 
+<img src="https://github.com/user-attachments/assets/21c9e845-d6b4-4d54-85a8-4cd6d8822ed3" width="90%" >
+
+### Student Login and signUp Page : 
+<img src="https://github.com/user-attachments/assets/bddcdb68-ff4a-4af4-a054-60a94b7d3289" width="45%" >
+<img src="https://github.com/user-attachments/assets/341c3c67-6677-4002-80ba-f9b637ff564a" width="45%" >
+
+### Admin Login and signUp Page : 
+<img src="https://github.com/user-attachments/assets/0eea7a52-5f75-4c2b-a78b-f4de8288ad63" width="45%" >
+<img src="https://github.com/user-attachments/assets/d54ce547-00e2-4161-86bc-76d71fb2a69b" width="45%" >
+
+### Student Dashboard : 
+<img src="https://github.com/user-attachments/assets/a8d680b2-d835-4882-a10e-91bb9f27ab54" width="45%" >
+<img src="https://github.com/user-attachments/assets/c3c1e994-bad7-4cb0-a624-09bbb91771f1" width="45%" >
+<img src="https://github.com/user-attachments/assets/c34a4622-7f0b-4b04-b6e3-90bedd28ce57" width="45%" >
+
+### Admin Dashboard : 
+<img src="https://github.com/user-attachments/assets/2ad47bcc-07ed-4b39-b88a-9a48549846c1" width="45%" >
+<img src="https://github.com/user-attachments/assets/2bda1253-f890-435f-8799-60f1b8af2957" width="45%" >
+<img src="https://github.com/user-attachments/assets/e9d3092d-ea90-4478-b9d6-55692d07eced" width="45%" >
 
 
-Data Export:
-Attendance records can be exported in CSV format for further processing or reporting.
 
-3. QR Code Attendance System
-QR codes are generated daily and expires at 23:59 Hrs / 11:59 PM.
 
-Students scan it using their mobile device in his Dashboard, triggering an authenticated API call to log attendance.
 
-4. Analytics & Visualization
-Integrated React Chart.js 2 for Daily attendance patterns.
+## 🚀 Project Setup
 
-5. Mobile-Responsive UI 
-Tailwind CSS used to ensure consistent experience across devices
+### 1. Clone Repository
+```bash
+git clone https://github.com/Manideepchopperla/Hostel-Attendence-System
+cd Hostel-Attendence-System
+```
+### 2. Install Dependencies
+```bash
+cd Frontend
+npm install
 
-Fully responsive dashboards for both students and admins
+cd ../Backend
+npm install
+``` 
+### 3. Build & Serve
+```bash
+# Build Frontend
+cd Frontend
+npm run build
 
-Toast notifications enhance real-time feedback for all actions
+# Delete old dist in Backend if exists, then:
+# Move new dist folder to Backend
 
-Security Measures:
-JWT-based authentication with token expiration
+# Serve Backend
+cd ../Backend
+node server.js
+```
 
-Role-based access control (student vs. admin)
+Student App: http://localhost:3000
 
-API protection with token validation middleware
+Admin Login: http://localhost:3000/admin
 
-Contact :
-    For any inquiries, please reach out to:
+## 🗄️ MongoDB Setup
 
-    Name: Manideep Chopperla
-    Email: manideepchopperla1808@gmail.com
-    GitHub: Manideepchopperla
+### 1. Create a MongoDB Database
+- Sign up or log in to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- Create a new project and then a new cluster.
+- Choose a free tier if you're just testing.
+
+### 2. Configure Database Access
+- Go to the "Database Access" section.
+- Create a new database user with read and write access.
+- Note down the username and password.
+
+### 3. Whitelist Your IP Address
+- In the "Network Access" section, add your current IP address to allow connections.
+
+### 4. Get Your Connection String
+- In the "Clusters" section, click on "Connect" and then "Connect your application".
+- Copy the connection string provided.
+
+### 5. Update Your Environment Variables
+- Create a `.env` file in the root of the `Server` directory:
+    ```bash
+    MONGODB_URI=your_mongodb_connection_string
+    PORT=3000
+    JWT_SECRET=your_jwt_secret
+    ALERT_EMAIL=your_email
+    ALERT_PASSWORD=your_email_password
+    ```
+- Replace `your_mongo_connection_string` with the connection string you copied earlier, ensuring to replace `<username>` and `<password>` with your actual MongoDB username and password.
+
+**Note:** Do not commit this file to the repository..
+
+## Contact
+
+For any inquiries, please reach out to:
+
+- **Name:** Manideep Chopperla
+- **Email:** [manideepchopperla1808@gmail.com](mailto:manideepchopperla1808@gmail.com)
+- **GitHub:** [Manideepchopperla](https://github.com/Manideepchopperla)

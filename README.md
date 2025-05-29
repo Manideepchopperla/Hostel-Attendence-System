@@ -94,7 +94,7 @@ Design and implement a full-stack hostel attendance monitoring system using the 
 ### Student Dashboard : 
 <img src="https://github.com/user-attachments/assets/a8d680b2-d835-4882-a10e-91bb9f27ab54" width="45%" >
 <img src="https://github.com/user-attachments/assets/c3c1e994-bad7-4cb0-a624-09bbb91771f1" width="45%" >
-<img src="https://github.com/user-attachments/assets/2dabbf21-47c1-4cf3-9079-f7faabdce189" width="45%" >
+<img src="https://github.com/user-attachments/assets/c34a4622-7f0b-4b04-b6e3-90bedd28ce57" width="45%" >
 
 ### Admin Dashboard : 
 <img src="https://github.com/user-attachments/assets/2ad47bcc-07ed-4b39-b88a-9a48549846c1" width="45%" >

@@ -42,8 +42,12 @@ const AttendanceHistory = () => {
               {Array.isArray(records) && records.map((record) => (
                 <tr key={record._id} className="text-center">
                   <td className="px-4 py-2 border">{new Date(record.date).toLocaleDateString()}</td>
-                  <td className="px-4 py-2 border">{record.checkIn || '-'}</td>
-                  <td className="px-4 py-2 border">{record.checkOut || '-'}</td>
+                  <td className="px-4 py-2 border">
+                   {record.checkIn ? new Date(record.checkIn).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true }) : '-'}
+                  </td>
+                  <td className="px-4 py-2 border">
+                   {record.checkOut ? new Date(record.checkOut).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true }) : '-'}
+                    </td>
                 </tr>
               ))}
               {records.length === 0 && (

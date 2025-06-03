@@ -1,6 +1,4 @@
-# 🏨 Hostel Attendance System
-
-**GitHub Repository**: [Hostel Attendance System](https://github.com/Manideepchopperla/Hostel-Attendence-System)
+# 🏨 Hostel Attendance System [Live Link](https://hostel-attendence-system.onrender.com/)
 
 ## 🎯 Objective
 Design and implement a full-stack hostel attendance monitoring system using the **MERN stack**, enabling:
